@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <script  src="js/phaser.js"></script>
+    <script src="js/phaser.min.js"></script>
+  
+    <link rel="stylesheet" href="css/style.css">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+<head>
+
+
+	
+	<title> El escalador level 3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/PrincipalLvl3.js"></script>
+  
+
+	<meta charset="utf-8">
+   
+
+	<script >
+  	$(window).load(function(){
+      $('#miModalInstrucciones').modal('show');
+    });
+    </script>
+
+    <script >
+      $(window).load(function(){
+        $('#modalDialogoUnoDeTres').modal('show');
+    });
+    </script>
+
+    <script >
+      $(window).load(function(){
+        $('#modalDialogoDosDeTres').modal('show');
+    });
+    </script>
+
+    <script >
+      $(window).load(function(){
+        $('#modalDialogoTresDeTres').modal('show');
+    });
+    </script>
+
+      <script >
+      $(window).load(function(){
+        $('#modalDialogoCuatroDeTres').modal('show');
+    });
+    </script>
+</head>
+
+<body>
+	 <div id="game">
+          
+        
+        </div> 
+  <div id="container" >
+    
+        
+    
+
+
+  <div class="modal fade" data-backdrop="static" data-keyboard ="false" id="miModalInstrucciones" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="col-md-12">
+            <img id="instrucciones" src="assets/textosTres/instrucciones3.png">
+          </div>
+           <div  class="col-md-12">
+              <input type="image" name="continuar" src="assets/lvlUno/jugar.png"  alt='Imagen publicación' data-dismiss="modal" aria-label="Close" />
+            </div>
+        
+        
+         
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade" data-backdrop="static" data-keyboard ="false" id="modalDialogoCuatroDeTres" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+     
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="col-md-12">
+            <img id="cuatro" src="assets/textosTres/dialogCuatroLvlTres.png">
+          </div>
+           <div  class="col-md-12">
+              <input type="image" name="continuar" src="assets/lvlUno/siguiente.png"  alt='Imagen publicación' data-dismiss="modal" aria-label="Close" />
+            </div>
+        
+        
+         
+      </div>
+    </div>
+  </div>
+
+
+   <div class="modal fade" data-backdrop="static" data-keyboard ="false" id="modalDialogoTresDeTres" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="col-md-12">
+            <img id="tres" src="assets/textosTres/dialogTresLvlTres.png">
+          </div>
+           <div  class="col-md-12">
+              <input type="image" name="continuar" src="assets/lvlUno/siguiente.png"  alt='Imagen publicación' data-dismiss="modal" aria-label="Close" />
+            </div>
+        
+        
+         
+      </div>
+    </div>
+  </div>
+ 
+     <div class="modal fade" data-backdrop="static" data-keyboard ="false" id="modalDialogoDosDeTres" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="col-md-12">
+            <img id="dos" src="assets/textosTres/dialogDosLvlTres.png">
+          </div>
+           <div  class="col-md-12">
+              <input type="image" name="continuar" src="assets/lvlUno/siguiente.png"  alt='Imagen publicación' data-dismiss="modal" aria-label="Close" />
+            </div>
+        
+        
+         
+      </div>
+    </div>
+  </div>
+
+
+   <div class="modal fade" data-backdrop="static" data-keyboard ="false" id="modalDialogoUnoDeTres" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="col-md-12">
+            <img id="uno" src="assets/textosTres/dialogUnoLvlTres.png">
+          </div>
+           <div  class="col-md-12">
+              <input type="image" name="continuar" src="assets/lvlUno/siguiente.png"  alt='Imagen publicación' data-dismiss="modal" aria-label="Close" />
+            </div>
+
+        
+        
+         
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade" data-backdrop="static" data-keyboard ="false" id="modalValor" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      
+        <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="col-md-12">
+          <img id="valor" src="assets/textosTres/valorTres.png">
+          </div>
+         <div  class="col-md-12">
+              <input type="image" name="continuar" src="assets/lvlUno/continuar.png"  alt='Imagen publicación' data-dismiss="modal" aria-label="Close" />
+            </div>
+        
+        
+         
+      </div>
+    </div>
+  </div>
+
+       
+
+  <div class="modal fullscreen-modal fade" data-backdrop="static" data-keyboard ="false" id="modalVideo" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-lg" role="document">
+      
+        <div class="modal-header">
+        
+          <video  id="vid" src="assets/videos/final.mp4"   modal-dialog ></video><br>
+                  <input type="image" name="continuar" src="assets/lvlUno/continuar.png" onclick="location.href='indexLvl1.html'" />
+
+        
+      </div>
+    </div>
+  </div>
+  </div>
+ 
+
+
+
+ 
+ 
+
+  
+
+  <audio id="aud" src="audio/nivel3.mp3" autoplay="true" "  ></audio>
+  <script>
+    var vid = document.getElementById("vid");
+    var modvid = document.getElementById("modalVideo");
+
+    modvid.show = function() {
+        document.getElementById('vid').play();
+         aud.pause();
+        };
+    
+    function audvid(){
+      document.getElementById('vid').pause();
+      aud.play();
+    }
+ 
+
+
+
+  
+
+      
+
+  </script>
+</body>
+</html>
+
+</body>
+</html>

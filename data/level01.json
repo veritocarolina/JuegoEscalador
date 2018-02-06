@@ -1,0 +1,66 @@
+    {  
+
+
+
+        "platforms": [
+            {"assets": "ground", "x": 0, "y": 506},       
+            {"assets": "grass:8x1", "x": 750, "y": 170},
+            {"assets": "grass:6x1", "x": 115, "y": 165},
+          
+            {"assets": "grass:4x1", "x": 480, "y": 260} ,
+            {"assets": "grass:2x1", "x": 300, "y": 370},
+            {"assets": "grass:1x1", "x": 150, "y": 470}
+        ],
+        "personaje":{ "x": 0, "y": 447},
+        
+        "coins":[
+            {"assets": "coin_animated", "x": 760, "y": 130},  
+            {"assets": "coin_animated", "x": 820, "y": 130},           
+            {"assets": "coin_animated", "x": 880, "y": 130},
+            {"assets": "coin_animated", "x": 940, "y": 130},
+
+
+
+            {"assets": "coin_animated", "x": 505, "y": 235},
+            {"assets": "coin_animated", "x": 575, "y": 235},
+            {"assets": "coin_animated", "x": 625, "y": 235},
+
+            
+            {"assets": "coin_animated", "x": 280, "y": 480},
+            {"assets": "coin_animated", "x": 360, "y": 480},
+            {"assets": "coin_animated", "x": 440, "y": 480},
+            {"assets": "coin_animated", "x": 520, "y": 480},
+            {"assets": "coin_animated", "x": 600, "y": 480},
+            {"assets": "coin_animated", "x": 680, "y": 480},
+            {"assets": "coin_animated", "x": 760, "y": 480},
+            {"assets": "coin_animated", "x": 840, "y": 480},
+
+              
+
+            {"assets": "coin_animated", "x": 165, "y": 135},
+            {"assets": "coin_animated", "x": 245, "y": 135},
+            {"assets": "coin_animated", "x": 335, "y": 135},
+            
+
+
+            {"assets": "coin_animated", "x": 320, "y": 350},
+            {"assets": "coin_animated", "x": 365, "y": 350}
+            
+
+        ],
+        "spiders":[
+            {"assets": "spider", "x": 190, "y": 130},
+            {"assets": "spider", "x": 900, "y": 135},
+           
+            {"assets": "spider", "x": 540, "y": 225},
+            {"assets": "spider", "x": 505, "y": 470}
+            
+        ],
+        
+        "banderas":[ {"x":935, "y":130}
+        ]
+
+    
+       
+        
+    }

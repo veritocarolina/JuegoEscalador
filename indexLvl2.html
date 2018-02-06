@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  
+	  <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <script  src="js/phaser.js"></script>
+    <script src="js/phaser.min.js"></script>
+  
+    <link rel="stylesheet" href="css/style.css">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+<head>
+
+
+	
+	<title> El escalador level 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/PrincipalLvl2.js"></script>
+  
+
+	<meta charset="utf-8">
+
+   
+    <script src=""></script>
+
+    <script >
+  		 $(window).load(function(){
+        $('#miModalInstrucciones').modal('show');
+    });
+    </script>
+
+    <script >
+      $(window).load(function(){
+        $('#modalDialogoUnoDeDos').modal('show');
+    });
+    </script>
+
+    <script >
+      $(window).load(function(){
+        $('#modalDialogoDosDeDos').modal('show');
+    });
+    </script>
+
+
+</div>
+</head>
+
+<style type="text/css">
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.modal-header {
+    padding:  15px;
+    border-bottom:  5px solid #06434d;
+}
+h4#myModalLabel {
+    font-size:  40px;
+    color: black;
+}
+
+.modal-body {
+    position:  relative;
+    padding: 30px;
+}
+video {
+    width: 100%;
+}
+.modal-content {
+    position:  relative;
+    background-color:  #ffffffdb;
+    background-clip:  padding-box;
+    border:  1px solid rgba(0,0,0,.2);
+    border-radius:  6px;
+    outline:  0;
+}
+.modal-body {
+    position:  relative;
+    padding:  70px;
+}
+
+
+button#btnJugar {
+    font-family:  inherit;
+    font-size:  inherit;
+    line-height:  inherit;
+    width:  90px;
+    height: 50px;
+    position:  inherit;
+    top: -10px;
+    left:  490px;
+}
+button#btnJugar {
+    font-family:  cursive;
+    font-size:  20px;
+    font-weight:  900;
+    line-height:  inherit;
+    width:  115px;
+    height:  50px;
+    position:  inherit;
+    top:  -10px;
+    left:  472px;
+    border-bottom-color:  #05363e;
+}
+
+button#btnIntentarOtraVez {
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: inherit;
+    width: 126px;
+    height: 69px;
+    position: inherit;
+    top: 28px;
+    left: 367px;
+    border-bottom-color: #05363e;
+}
+
+.modalAnciano#modal-body {
+    position: relative;
+    padding: 70px;
+    font-size: 30px;
+}
+
+.container{
+ width: 100%;
+min-height: 100%;
+height: auto !important;
+position: fixed;
+top:0; 
+left:0; 
+background-size: 100% 100%;
+}
+
+</style>
+
+
+<body >
+
+   <div id="game">
+          
+        
+        </div> 
+  <div id="container" >
+    
+        
+  
+  <div class="modal fade" data-backdrop="static" data-keyboard ="false" id="miModalInstrucciones" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="col-md-12">
+            <img  id="instrucciones" src="assets/textosDos/instrucciones2.png">
+          </div>
+          <div  class="col-md-12">
+              <input type="image" name="continuar" src="assets/lvlUno/jugar.png"  alt='Imagen publicación' data-dismiss="modal" aria-label="Close" />
+            </div>
+        </div>
+        
+         
+      
+    </div>
+  </div>
+
+    <div class="modal fade" data-backdrop="static" data-keyboard ="false" id="modalDialogoDosDeDos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="col-md-12" >
+            <img id="dos" src="assets/textosDos/dialogDosLvlDos.png">
+          </div>
+          <div  class="col-md-12">
+              <input type="image" name="continuar" src="assets/lvlUno/siguiente.png"  alt='Imagen publicación' data-dismiss="modal" aria-label="Close" />
+            </div>
+        
+        
+         
+      </div>
+    </div>
+  </div>
+
+
+   <div class="modal fade" data-backdrop="static" data-keyboard ="false" id="modalDialogoUnoDeDos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="col-md-12">
+            <img id="uno" src="assets/textosDos/dialogUnoLvlDos.png">
+          </div>
+          <div  class="col-md-12">
+              <input type="image" name="continuar" src="assets/lvlUno/siguiente.png"  alt='Imagen publicación' data-dismiss="modal" aria-label="Close" />
+            </div>
+        
+        
+         
+      </div>
+    </div>
+  </div>
+
+   <div class="modal fade" data-backdrop="static" data-keyboard ="false" id="modalAnciano" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      
+        <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="col-md-12">
+            <img id="anciano" src="assets/lvlDos/caidaAnciano.png">
+          </div>
+        
+        <input type="image" name="continuar" src="assets/lvlDos/intentar.png"  alt='Imagen publicación' data-dismiss="modal" aria-label="Close" />
+        
+         
+      </div>
+    </div>
+  </div>
+
+   <div class="modal fade" data-backdrop="static" data-keyboard ="false" id="modalValor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      
+        <div class="modal-header">
+          <button onclick="location.href='indexLvl3.html'"  type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="col-md-12">
+          <img id="valor" src="assets/textosDos/valorDos.png">
+          </div>
+          <input type="image" name="continuar" src="assets/lvlUno/continuar.png" onclick="location.href='indexLvl3.html'" />
+          
+        
+        
+         
+      </div>
+    </div>
+  </div>
+ 
+  <audio id="aud" src="audio/nivel2.mp3" autoplay="true"  ></audio>
+  <script>
+    var ins = document.getElementById("instrucciones");
+    var modIns = document.getElementById("miModalInstrucciones");
+
+    modIns.show = function() {
+        document.getElementById('ins').show();
+         this.game.paused= true;
+        };
+    
+    function audvid(){
+      document.getElementById('ins').hide();
+      this.game.paused=false;
+    };
+
+    function pausa_juego(){
+      this.game.paused=true;
+    };
+
+   
+
+    
+
+  </script>
+</body>
+</html>
